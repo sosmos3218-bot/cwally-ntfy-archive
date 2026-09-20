@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>cwally ntfy archive</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>cwally ntfy archive</h1>
+      <p class="sub">cwally-port / flow / ops · 최근 ntfy + 공개 미러</p>
+    </div>
+    <div class="meta" id="status">불러오는 중</div>
+  </header>
+  <section class="toolbar">
+    <input id="q" type="search" placeholder="제목, 본문, prefix 검색" />
+    <select id="topic">
+      <option value="">topic 전체</option>
+      <option value="cwally-port">cwally-port</option>
+      <option value="cwally-flow">cwally-flow</option>
+      <option value="cwally-ops">cwally-ops</option>
+    </select>
+    <button id="reload" type="button">새로고침</button>
+  </section>
+  <main id="list"></main>
+  <footer>투자 권유 아님. 장기 원본은 private cwally-alerts state/archive.json.</footer>
+  <script src="./app.js"></script>
+</body>
+</html>
